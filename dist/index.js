@@ -946,7 +946,7 @@ class GitHubHelper {
             core.setOutput('pull-request-number', pull.number);
             core.setOutput('pull-request-url', pull.html_url);
             // Deprecated
-            core.exportVariable('PULL_REQUEST_NUMBER', pull.number);
+            // core.exportVariable('PULL_REQUEST_NUMBER', pull.number)
             core.endGroup();
             // Set milestone, labels and assignees
             const updateIssueParams = {};
